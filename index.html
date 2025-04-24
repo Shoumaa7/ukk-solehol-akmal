@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Gochi+Hand&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Tilt Neon", sans-serif;
+      }
+      .font-accent {
+        font-family: "Fredoka", sans-serif;
+      }
+      .font-latin {
+        font-family: "Gochi Hand", cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- cover undangan -->
+    <section
+      class="overflow-hidden relative text-center mx-auto h-screen w-full max-w-lg flex items-center justify-center flex-col bg-cover bg-center"
+      style="background-image: url(assets/bg.webp)"
+    >
+      <img
+        src="assets/ornament-1.png"
+        alt="Ornament"
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-60 md:w-80 z-10"
+      />
+
+      <div
+        class="h-full w-full text-center mx-auto h-screen w-full flex items-center justify-center flex-col"
+        style="position: relative; z-index: 99"
+      >
+        <div
+          class="mx-auto mb-4 size-48 rounded-full aspect-square overflow-hidden"
+        >
+          <img
+            class="size-full object-cover"
+            src="image/gallery-2.jpg"
+            alt=""
+            height="150"
+            width="150"
+          />
+        </div>
+        <div
+          class="mb-4 text-5xl font-bold font-accent"
+          data-aos="zoom-in"
+          data-aos-duration="3000"
+        >
+          YOGI ARYANTO
+        </div>
+        <div class="mb-16" data-aos="zoom-in" data-aos-duration="3000">
+          Selamat Ulang Tahun
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="3000">
+          <div class="mb-2">Kepada Yth <br />Bapak/Ibu/Saudara/i</div>
+          <div class="mb-6 font-bold">Nama Tamu</div>
+          <a
+            id="btnBuka"
+            href="#isiUndangan"
+            class="bg-blue-500 text-white py-3 px-6 rounded-xl hover:bg-blue-700"
+            >Open Invitation</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- isi undangan -->
+    <div
+      id="isiUndangan"
+      class="hidden overflow-hidden bg-orange-50 relative text-center mx-auto w-full max-w-lg flex items-center justify-center flex-col"
+    >
+      <section
+        class="px-6 py-12 w-full relative"
+        style="background-image: url(assets/bg.webp)"
+      >
+        <div class="mx-auto w-full max-w-[26rem]">
+          <p class="mx-auto max-w-80 text-3xl font-bold">WELCOME TO</p>
+          <div
+            class="text-8xl font-bold font-accent text-blue-500"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+          >
+            1st
+          </div>
+          <p class="mx-auto max-w-80 mb-6 text-3xl font-bold">
+            YOGI BIRTHDAY PARTY
+          </p>
+          <div class="flex items-center justify-center gap-3 mb-6">
+            <div class="text-7xl font-bold">13</div>
+            <div class="text-left text-2xl font-bold">
+              <div>JUM'AT</div>
+              <div>JUNI 2024</div>
+            </div>
+            <div class="h-20 w-0.5 bg-blue-500"></div>
+            <div class="text-left text-2xl font-bold">
+              <div>12.00 WIB</div>
+              <div>s.d SELESAI</div>
+            </div>
+          </div>
+          <div
+            id="countDown"
+            class="grid grid-cols-4 gap-2 mb-8"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div class="bg-blue-500 text-white p-3 rounded-md">
+              <div id="day" class="text-2xl">00</div>
+              <div class="text-sm">Hari</div>
+            </div>
+            <div class="bg-blue-500 text-white p-3 rounded-md">
+              <div id="hour" class="text-2xl">00</div>
+              <div class="text-sm">Jam</div>
+            </div>
+            <div class="bg-blue-500 text-white p-3 rounded-md">
+              <div id="minute" class="text-2xl">00</div>
+              <div class="text-sm">Menit</div>
+            </div>
+            <div class="bg-blue-500 text-white p-3 rounded-md">
+              <div id="second" class="text-2xl">00</div>
+              <div class="text-sm">Detik</div>
+            </div>
+          </div>
+
+          <h2 class="font-latin text-4xl mb-4">Alamat</h2>
+          <p class="mb-3">
+            PJHG+Q3R, Semangat Bakti, Kec. Alalak, Kabupaten Barito Kuala,
+            Kalimantan Selatan 70582
+          </p>
+          <iframe
+            class="w-full h-64 md:h-96 rounded-xl shadow-lg mb-4"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1072.740519231642!2d114.6238598156375!3d-3.270928102287636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de424a5af5a54ab%3A0x31f698effdf56e14!2sGriya%20Antasari%20Semangat!5e1!3m2!1sid!2sid!4v1745463866909!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <a
+            href="https://maps.app.goo.gl/Xa1fw3zBoGhiQ1ZA7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block mb-8 bg-blue-500 text-white py-3 px-6 rounded-xl hover:bg-blue-700"
+            >Buka Google Maps</a
+          >
+        </div>
+      </section>
+
+      <section
+        class="px-6 py-12 w-full relative"
+        style="background-image: url(assets/bg.webp)"
+      >
+        <div class="mx-auto w-full max-w-[26rem]">
+          <h2 class="font-latin text-4xl mb-4">Our Memories</h2>
+          <div class="grid grid-cols-2 gap-2 mb-2">
+            <div class="aspect-square overflow-hidden">
+              <img
+                class="size-full object-cover"
+                src="image/gallery-1.jpg"
+                alt=""
+                height="150"
+                width="150"
+              />
+            </div>
+            <div class="aspect-square overflow-hidden">
+              <img
+                class="size-full object-cover"
+                src="image/gallery-2.jpg"
+                alt=""
+                height="150"
+                width="150"
+              />
+            </div>
+            <div class="aspect-square overflow-hidden">
+              <img
+                class="size-full object-cover"
+                src="image/gallery-3.jpg"
+                alt=""
+                height="150"
+                width="150"
+              />
+            </div>
+            <div class="aspect-square overflow-hidden">
+              <img
+                class="size-full object-cover"
+                src="image/gallery-4.jpg"
+                alt=""
+                height="150"
+                width="150"
+              />
+            </div>
+            <div class="aspect-square overflow-hidden">
+              <img
+                class="size-full object-cover"
+                src="image/gallery-5.jpg"
+                alt=""
+                height="150"
+                width="150"
+              />
+            </div>
+            <div class="aspect-square overflow-hidden">
+              <img
+                class="size-full object-cover"
+                src="image/gallery-2.jpg"
+                alt=""
+                height="150"
+                width="150"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="px-6 py-12 w-full min-h-[40rem] text-center flex flex-col justify-center items-center"
+        style="background-image: url(assets/bg.webp)"
+      >
+        <p class="mx-auto max-w-80 text-5xl font-latin font-bold text-blue-500">
+          Thank you for<br />Your atention<br />Hope to see you<br />at the
+          event
+        </p>
+      </section>
+    </div>
+    <!-- lagu start -->
+    <audio src="music.mp3" id="lagu"></audio>
+    <!-- lagu end -->
+
+    <script>
+      const tombolBuka = document.getElementById("btnBuka");
+      const isiUndangan = document.getElementById("isiUndangan");
+      const lagu = document.getElementById("lagu");
+
+      tombolBuka.addEventListener("click", function () {
+        isiUndangan.classList.toggle("hidden");
+        lagu.play();
+      });
+
+      let target = new Date("june 13, 2025 12:00:00").getTime();
+
+      let x = setInterval(function () {
+        let sekarang = new Date().getTime();
+
+        let jarak = target - sekarang;
+
+        let days = Math.floor(jarak / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+          (jarak % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor((jarak % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((jarak % (1000 * 60)) / 1000);
+
+        let hari = document.getElementById("day");
+        let jam = document.getElementById("hour");
+        let menit = document.getElementById("minute");
+        let detik = document.getElementById("second");
+
+        hari.innerText = days;
+        jam.innerText = hours;
+        menit.innerText = minutes;
+        detik.innerText = seconds;
+      }, 1000);
+    </script>
+  </body>
+</html>
